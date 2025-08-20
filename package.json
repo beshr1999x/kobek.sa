@@ -1,7 +1,9 @@
 {
-  "name": "kobek-landing-next",
+  "name": "kobek-sa",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https://kobek.sa",
+  "description": "Kobek coffee subscription service landing page",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
