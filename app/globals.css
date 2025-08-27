@@ -7,8 +7,9 @@
 }
 
 html { direction: rtl; }
-body { @apply bg-white text-gray-900 antialiased; }
+body { @apply bg-primary text-white antialiased; }
 .container { @apply max-w-6xl mx-auto px-4; }
-.btn-primary { @apply inline-flex items-center justify-center rounded-2xl bg-primary text-white px-6 py-3 text-base font-semibold shadow hover:opacity-90 transition; }
-.card { @apply rounded-2xl shadow-md p-6 bg-white; }
-.gradient { background: radial-gradient(60% 60% at 50% 0%, #DBEAFE 0%, rgba(219,234,254,0) 70%); }
+.btn-primary { @apply inline-flex items-center justify-center rounded-2xl bg-secondary text-primary px-6 py-3 text-base font-semibold shadow hover:opacity-90 transition; }
+.btn-secondary { @apply inline-flex items-center justify-center rounded-2xl bg-transparent border border-white text-white px-6 py-3 text-base font-semibold hover:bg-white hover:text-primary transition; }
+.card { @apply rounded-2xl shadow-md p-6 bg-white/10 backdrop-blur-sm border border-white/20; }
+.gradient { background: radial-gradient(60% 60% at 50% 0%, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%); }

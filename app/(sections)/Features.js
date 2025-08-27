@@ -7,16 +7,18 @@ const items = [
 
 export default function Features(){
   return (
-    <section id="features" className="py-16">
+    <section id="features" className="py-20">
       <div className="container">
-        <h2 className="text-3xl font-extrabold">مميزات كوبك</h2>
-        <p className="text-gray-600 mt-2">كل ما تحتاجه للحصول على تجربة قهوة يومية سلسة.</p>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mt-8">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-4">المزايا</h2>
+          <p className="text-xl text-white/80">كل ما تحتاجه للحصول على تجربة قهوة يومية سلسة</p>
+        </div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {items.map((i)=> (
-            <div key={i.title} className="card">
-              <div className="text-3xl">{i.icon}</div>
-              <h3 className="mt-3 font-bold">{i.title}</h3>
-              <p className="text-gray-600 mt-1">{i.desc}</p>
+            <div key={i.title} className="card text-center group hover:scale-105 transition-transform">
+              <div className="text-6xl mb-4">{i.icon}</div>
+              <h3 className="text-xl font-bold text-white mb-3">{i.title}</h3>
+              <p className="text-white/80">{i.desc}</p>
             </div>
           ))}
         </div>
