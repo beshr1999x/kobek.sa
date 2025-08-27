@@ -1,55 +1,82 @@
 export default function Hero(){
   return (
-    <section id="home" className="pt-16 pb-20 min-h-screen flex items-center">
-      <div className="container grid md:grid-cols-2 gap-12 items-center">
-        {/* Left Side - Illustration */}
-        <div className="relative">
-          <div className="text-center md:text-left">
-            <h2 className="text-4xl md:text-6xl font-bold text-white mb-8 transform -rotate-12">
-              IT'S A GOOD DAY
-            </h2>
-            
-            {/* Person with Coffee Cup Illustration */}
-            <div className="relative w-80 h-80 mx-auto md:mx-0">
-              {/* Person */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-32 h-32 bg-white rounded-full flex items-center justify-center">
-                  <div className="w-20 h-20 bg-primary rounded-full flex items-center justify-center">
-                    <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
-                      <div className="w-6 h-6 bg-primary rounded-full"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              {/* Coffee Cup */}
-              <div className="absolute top-8 left-1/2 transform -translate-x-1/2">
-                <div className="w-24 h-32 bg-white rounded-t-3xl border-4 border-white relative">
-                  <div className="absolute top-2 left-2 right-2 bottom-2 bg-primary rounded-t-2xl"></div>
-                  <div className="absolute -right-2 top-8 w-6 h-8 border-4 border-white rounded-r-full"></div>
-                  <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-16 h-2 bg-white rounded-full"></div>
-                </div>
-              </div>
-              
-              {/* Accent Shapes */}
-              <div className="absolute top-4 left-8 w-4 h-4 bg-accent rounded-full"></div>
-              <div className="absolute top-16 right-8 w-6 h-6 bg-secondary transform rotate-45"></div>
+    <section id="home" className="relative w-full h-screen bg-[#2f488b] overflow-hidden">
+      {/* Navigation Header */}
+      <div className="absolute w-full h-[299px] top-[125px] left-0 z-10">
+        {/* Logo and Brand */}
+        <div className="absolute top-[47px] left-[2310px] text-[#f1f3f7] text-[88.3px] leading-[88.4px] font-semibold text-left tracking-[0] [direction:rtl] animate-fade-in" style={{"--animation-delay": "0.2s"}}>
+          كوبك
+          <br />
+          Ковен
+        </div>
+        
+        {/* Navigation Menu */}
+        <div className="absolute top-[87px] left-[1910px] text-[#ebedf4] text-[56.2px] leading-normal font-semibold text-left tracking-[0] [direction:rtl] animate-fade-in" style={{"--animation-delay": "0.4s"}}>
+          الرئيسية
+        </div>
+        <div className="absolute top-[87px] left-[1573px] text-[#f0f2f7] text-[64px] leading-normal font-semibold text-left tracking-[0] [direction:rtl] animate-fade-in" style={{"--animation-delay": "0.6s"}}>
+          المزايا
+        </div>
+        <div className="absolute top-[87px] left-[1131px] text-[#f0f2f7] text-6xl leading-normal font-semibold text-left tracking-[0] [direction:rtl] animate-fade-in" style={{"--animation-delay": "0.8s"}}>
+          طريقة العمل
+        </div>
+        <div className="absolute top-[89px] left-[836px] text-[#eaecf3] text-[57.8px] leading-normal font-semibold text-left tracking-[0] [direction:rtl] animate-fade-in" style={{"--animation-delay": "1s"}}>
+          التطبيق
+        </div>
+        
+        {/* Login Button */}
+        <div className="absolute top-[68px] left-[204px] animate-fade-in" style={{"--animation-delay": "1.2s"}}>
+          <div className="w-[427px] h-[120px] bg-[#bedced] rounded-[32px] flex items-center justify-center hover:scale-105 transition-transform duration-300">
+            <div className="text-[#395292] text-[57.4px] leading-normal font-semibold text-center tracking-[0] [direction:rtl]">
+              تسجيل الدخول
             </div>
           </div>
         </div>
+        
+        {/* Image 3 - Placeholder for now */}
+        <div className="absolute w-[119px] h-[152px] top-[60px] left-[2627px] bg-white/20 rounded-[16px] border-2 border-dashed border-white/40 flex items-center justify-center animate-fade-in" style={{"--animation-delay": "1.4s"}}>
+          <span className="text-white/60 text-xs">Image 3</span>
+        </div>
+      </div>
 
-        {/* Right Side - Text and CTA */}
-        <div className="text-center md:text-right">
-          <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
-            قهوتك اليومية باشتراك ذكي
-          </h1>
-          <p className="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed">
-            اشترك شهريًا، واشرب كوبك اليومي من القهوة بسعر مخفّض في المقاهي المشاركة.
+      {/* Main Content */}
+      <div className="relative w-full h-full flex items-center">
+        {/* Left Side - Illustration */}
+        <div className="absolute w-[947px] h-[1229px] top-[481px] left-[497px] bg-gradient-to-br from-blue-400/20 to-blue-600/20 rounded-[32px] border border-white/20 flex items-center justify-center animate-fade-in" style={{"--animation-delay": "0.5s"}}>
+          {/* GOOD Text */}
+          <div className="absolute top-[15px] left-[379px] text-[#eceded] text-[101.8px] font-semibold tracking-[0] leading-normal animate-fade-up" style={{"--animation-delay": "1s"}}>
+            GOOD
+          </div>
+          
+          {/* Image 2 - Placeholder for now */}
+          <div className="absolute w-[200px] h-[191px] top-[120px] left-[17px] bg-white/20 rounded-[16px] border-2 border-dashed border-white/40 flex items-center justify-center animate-fade-up" style={{"--animation-delay": "1.5s"}}>
+            <span className="text-white/60 text-xs">Image 2</span>
+          </div>
+        </div>
+
+        {/* Right Side - Text Content */}
+        <div className="absolute right-[497px] top-[597px] text-right">
+          {/* Main Headline */}
+          <div className="text-[#f5f6f9] text-[153.5px] leading-[194.4px] font-semibold tracking-[0] [direction:rtl] mb-8 animate-fade-up" style={{"--animation-delay": "0.8s"}}>
+            قهوتك اليومية
+            <br />
+            باشتراك ذكي
+          </div>
+          
+          {/* Description */}
+          <p className="text-[#dee2ec] text-[63.3px] leading-[82.5px] font-semibold tracking-[0] [direction:rtl] mb-12 max-w-[953px] animate-fade-up" style={{"--animation-delay": "1.2s"}}>
+            اشترك شهريا واشرب كوبك اليومي
+            <br />
+            من القهوة بسعر مخقض في
+            <br />
+            المقاهي المشاركة
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-end">
-            <a href="#cta" className="btn-primary text-lg px-8 py-4">
+          
+          {/* CTA Button */}
+          <div className="w-[366px] h-[120px] bg-[#e2b514] rounded-[32px] flex items-center justify-center animate-fade-up hover:scale-105 transition-transform duration-300" style={{"--animation-delay": "1.6s"}}>
+            <div className="text-[#3d5083] text-[30.6px] leading-normal font-semibold text-center tracking-[0] [direction:rtl]">
               ابدأ الآن
-            </a>
+            </div>
           </div>
         </div>
       </div>
