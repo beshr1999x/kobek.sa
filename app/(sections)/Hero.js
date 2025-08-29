@@ -18,8 +18,8 @@ export default function Hero(){
         <div className="absolute top-[87px] left-[1131px] text-[#f0f2f7] text-6xl leading-normal font-semibold text-left tracking-[0] [direction:rtl] animate-fade-in" style={{"--animation-delay": "0.8s"}}>
           طريقة العمل
         </div>
-        <div className="absolute top-[89px] left-[836px] text-[#eaecf3] text-[57.8px] leading-normal font-semibold text-left tracking-[0] [direction:rtl] animate-fade-in" style={{"--animation-delay": "1s"}}>
-          التطبيق
+        <div>
+
         </div>
         
         {/* Login Button */}
