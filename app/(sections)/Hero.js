@@ -1,88 +1,105 @@
-import React from "react";
-import image2 from "./image-2.png";
-import image3 from "./image-3.png";
-
-export const FigmaDesign = () => {
+export default function Hero() {
   return (
-    <div className="bg-transparent grid justify-items-center [align-items:start] w-screen">
-      <div className="w-[2952px] h-[1710px]">
-        <div className="h-[1710px]">
-          <div className="relative w-[2952px] h-[1586px] top-[124px]">
-            <div className="relative h-[1710px] top-[-124px] bg-[#2f488b]">
-              <div className="absolute w-[378px] h-[133px] top-[1311px] left-[2369px]">
-                <div className="relative w-[366px] h-[120px] top-[9px] left-1.5 bg-[#e2b514] rounded-[32px]">
-                  <div className="w-64 h-[88px] top-2.5 left-[61px] text-[#3d5083] text-[30.6px] leading-[normal] absolute [font-family:'Inter-SemiBold',Helvetica] font-semibold text-left tracking-[0] [direction:rtl]">
-                    ابدأ الآن
-                  </div>
-                </div>
+    <section id="home" dir="rtl" className="relative w-full min-h-screen bg-[#2f488b] overflow-hidden">
+      {/* Navigation */}
+      <header className="w-full">
+        <div className="mx-auto max-w-screen-2xl px-4 sm:px-6 lg:px-8 py-6 flex items-center justify-between">
+          {/* Logo */}
+          <div className="flex items-center gap-3">
+            {/* استبدل src بصورة شعارك */}
+            <div className="w-12 h-12 rounded-xl bg-white/20 border border-white/30 flex items-center justify-center">
+              <span className="text-white/70 text-xs">Logo</span>
+            </div>
+            <span className="text-[#f1f3f7] text-xl sm:text-2xl font-semibold">كوبك</span>
+          </div>
+
+          {/* Nav */}
+          <nav className="hidden md:flex items-center gap-8">
+            <a href="#home" className="text-[#ebedf4] hover:text-white text-lg font-semibold transition-colors">الرئيسية</a>
+            <a href="#features" className="text-[#f0f2f7] hover:text-white text-lg font-semibold transition-colors">المزايا</a>
+            <a href="#how" className="text-[#f0f2f7] hover:text-white text-lg font-semibold transition-colors">طريقة العمل</a>
+          </nav>
+
+          {/* Login */}
+          <div className="flex items-center gap-3">
+            <a
+              href="#login"
+              className="inline-flex items-center justify-center h-11 px-6 rounded-2xl bg-[#bedced] text-[#395292] font-semibold hover:scale-[1.03] active:scale-[0.99] transition-transform"
+            >
+              تسجيل الدخول
+            </a>
+
+            {/* زر قائمة للجوال */}
+            <button
+              className="md:hidden w-11 h-11 rounded-xl bg-white/10 border border-white/20 grid place-items-center"
+              aria-label="فتح القائمة"
+            >
+              <span className="block w-6 h-0.5 bg-white mb-1.5" />
+              <span className="block w-6 h-0.5 bg-white mb-1.5" />
+              <span className="block w-6 h-0.5 bg-white" />
+            </button>
+          </div>
+        </div>
+      </header>
+
+      {/* Hero */}
+      <div className="mx-auto max-w-screen-2xl px-4 sm:px-6 lg:px-8 pb-16 lg:pb-24">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+          {/* النص */}
+          <div className="order-2 lg:order-1 text-right">
+            <h1 className="text-[#f5f6f9] text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-extrabold leading-tight">
+              قهوتك اليومية
+              <br />
+              باشتراك ذكي
+            </h1>
+
+            <p className="mt-6 text-[#dee2ec] text-lg sm:text-xl lg:text-2xl font-medium leading-relaxed">
+              اشترك شهريًا واشرب كوبك اليومي
+              من القهوة بسعر مخفض
+            </p>
+
+            <div className="mt-10">
+              <a
+                href="#start"
+                className="inline-flex items-center justify-center h-12 px-8 rounded-2xl bg-[#e2b514] text-[#3d5083] font-semibold hover:scale-[1.04] active:scale-[0.99] transition-transform"
+              >
+                ابدأ الآن
+              </a>
+            </div>
+
+            {/* روابط ثانوية على الجوال */}
+            <div className="mt-6 md:hidden flex gap-6 text-white/80 text-base">
+              <a href="#features" className="hover:text-white">المزايا</a>
+              <a href="#how" className="hover:text-white">طريقة العمل</a>
+            </div>
+          </div>
+
+          {/* الصورة / الكرت */}
+          <div className="order-1 lg:order-2">
+            <div className="relative w-full aspect-[4/5] sm:aspect-[5/4] lg:aspect-[4/3] overflow-hidden rounded-3xl border border-white/20 bg-gradient-to-br from-blue-400/20 to-blue-600/20 backdrop-blur-sm">
+              {/* شارة GOOD */}
+              <div className="absolute top-4 left-4 sm:left-6 text-[#eceded] text-3xl sm:text-4xl lg:text-5xl font-semibold">
+                GOOD
               </div>
 
-              <p className="absolute w-[953px] h-[248px] top-[1013px] left-[1801px] [font-family:'Inter-SemiBold',Helvetica] font-semibold text-[#dee2ec] text-[63.3px] tracking-[0] leading-[82.5px] [direction:rtl]">
-                اشترك شهريا واشرب كوبك اليومي
-                <br />
-                من القهوة بسعر مخقض في
-                <br />. المقاهي المشاركة
-              </p>
-
-              <div className="absolute w-[959px] h-[389px] top-[597px] left-[1792px] [font-family:'Inter-SemiBold',Helvetica] font-semibold text-[#f5f6f9] text-[153.5px] text-left tracking-[0] leading-[194.4px] [direction:rtl]">
-                قهوتك اليومية
-                <br />
-                باشتراك ذكي
+              {/* Image placeholders */}
+              <div className="absolute top-6 right-6 w-16 h-20 sm:w-20 sm:h-24 rounded-xl bg-white/15 border-2 border-white/30 grid place-items-center">
+                <span className="text-white/70 text-[10px]">Image 1</span>
               </div>
 
-              <div className="absolute w-[947px] h-[1229px] top-[481px] left-[497px] bg-[url(/image.png)] bg-cover bg-[50%_50%]">
-                <div className="absolute w-[310px] h-[140px] top-[15px] left-[379px] [font-family:'Inter-SemiBold',Helvetica] font-semibold text-[#eceded] text-[101.8px] tracking-[0] leading-[normal]">
-                  GOOD
-                </div>
-
-                <img
-                  className="absolute w-[200px] h-[191px] top-[120px] left-[17px] object-cover"
-                  alt="Image"
-                  src={image2}
-                />
+              <div className="absolute bottom-6 left-6 w-40 h-28 sm:w-48 sm:h-32 rounded-2xl bg-white/15 border-2 border-white/30 grid place-items-center">
+                <span className="text-white/70 text-xs">Image 2</span>
               </div>
 
-              <div className="absolute w-[2952px] h-[299px] top-[125px] left-0">
-                <img
-                  className="absolute w-[119px] h-[152px] top-[60px] left-[2627px] object-cover"
-                  alt="Image"
-                  src={image3}
-                />
-
-                <div className="w-[300px] h-[177px] top-[47px] left-[2310px] text-[#f1f3f7] text-[88.3px] leading-[88.4px] absolute [font-family:'Inter-SemiBold',Helvetica] font-semibold text-left tracking-[0] [direction:rtl]">
-                  كوبك
-                  <br />
-                  Ковен
-                </div>
-
-                <div className="w-[210px] h-[77px] top-[87px] left-[1910px] text-[#ebedf4] text-[56.2px] leading-[normal] absolute [font-family:'Inter-SemiBold',Helvetica] font-semibold text-left tracking-[0] [direction:rtl]">
-                  الرئيسية
-                </div>
-
-                <div className="w-[166px] h-[78px] top-[87px] left-[1573px] text-[#f0f2f7] text-[64px] leading-[normal] absolute [font-family:'Inter-SemiBold',Helvetica] font-semibold text-left tracking-[0] [direction:rtl]">
-                  المزايا
-                </div>
-
-                <div className="w-[328px] h-[76px] top-[87px] left-[1131px] text-[#f0f2f7] text-6xl leading-[normal] absolute [font-family:'Inter-SemiBold',Helvetica] font-semibold text-left tracking-[0] [direction:rtl]">
-                  طريقة العمل
-                </div>
-
-                <div className="w-[198px] h-[75px] top-[89px] left-[836px] text-[#eaecf3] text-[57.8px] leading-[normal] absolute [font-family:'Inter-SemiBold',Helvetica] font-semibold text-left tracking-[0] [direction:rtl]">
-                  التطبيق
-                </div>
-
-                <div className="absolute w-[441px] h-[134px] top-[68px] left-[204px]">
-                  <div className="relative w-[427px] h-[120px] top-2 left-[7px] bg-[#bedced] rounded-[32px]">
-                    <div className="w-[377px] h-[75px] top-[26px] left-[23px] text-[#395292] text-[57.4px] leading-[normal] absolute [font-family:'Inter-SemiBold',Helvetica] font-semibold text-left tracking-[0] [direction:rtl]">
-                      تسجيل الدخول
-                    </div>
-                  </div>
-                </div>
-              </div>
+              {/* زخرفة خفيفة */}
+              <div className="absolute -bottom-16 -right-16 w-64 h-64 rounded-full bg-white/10 blur-3xl pointer-events-none" />
             </div>
           </div>
         </div>
       </div>
-    </div>
+
+      {/* خلفية زخرفية */}
+      <div className="pointer-events-none absolute inset-x-0 -top-40 mx-auto h-72 w-[90%] max-w-6xl rounded-full bg-white/5 blur-3xl" />
+    </section>
   );
-};
+}
