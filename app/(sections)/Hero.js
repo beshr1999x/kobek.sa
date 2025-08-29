@@ -69,7 +69,6 @@ export default function Hero(){
             <br />
             من القهوة بسعر مخقض في
             <br />
-            المقاهي المشاركة
           </p>
           
           {/* CTA Button */}
