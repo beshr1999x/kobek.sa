@@ -5,9 +5,7 @@ export default function Hero(){
       <div className="absolute w-full h-[299px] top-[125px] left-0 z-10">
         {/* Logo and Brand */}
         <div className="absolute top-[47px] left-[2310px] text-[#f1f3f7] text-[88.3px] leading-[88.4px] font-semibold text-left tracking-[0] [direction:rtl] animate-fade-in" style={{"--animation-delay": "0.2s"}}>
-          كوبك
-          <br />
-          Ковен
+
         </div>
         
         {/* Navigation Menu */}
