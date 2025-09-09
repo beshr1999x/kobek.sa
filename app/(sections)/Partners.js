@@ -1,15 +1,26 @@
-const partners = ["Roasters", "Brew Lab", "Daily Cup", "Bean House", "Arabica"];
 export default function Partners(){
   return (
-    <section id="partners" className="py-16">
-      <div className="container">
-        <h2 className="text-3xl font-extrabold">المقاهي المشاركة (نموذج)</h2>
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-4 mt-8">
-          {partners.map(p => (
-            <div key={p} className="card text-center">{p}</div>
-          ))}
+    <>
+      {/* Desktop Partners Section */}
+      <div className="featrues-1">
+        <div className="features">
+          <div className="text-15 sfarabic-bold-black-56px">صاحب مقهى؟</div>
+          <p className="text-1 sfarabic-regular-normal-black-22px">انضم معنا في كوبك وحقق دخل إضافي مع كل كوب!</p>
         </div>
       </div>
-    </section>
+
+      {/* Mobile Partners Section */}
+      <div className="featrues-4 featrues">
+        <div className="text-17 sfarabic-bold-black-24px">صاحب مقهى؟</div>
+        <p className="text-16 sfarabic-regular-normal-black-14px">انضم معنا في كوبك وحقق دخل إضافي مع كل كوب!</p>
+      </div>
+      
+      <img className="group-268" src="/img/group-268-2@2x.png" alt="Group 268" />
+      
+      <div className="frame-1618873014">
+        <div className="register-buton-3 register-buton"></div>
+        <div className="text-42">ابدأ الآن</div>
+      </div>
+    </>
   )
 }

@@ -1,3 +1,28 @@
+@import url("../css/styleguide.css");
+@import url("../css/landing-pageu47desktopu47v1u460.css");
+
+/* Responsive Layout Control */
+/* Mobile layout - show by default (mobile-first) */
+.index.screen {
+  display: block;
+}
+
+/* Desktop layout - hidden by default */
+.landing-pageu47desktopu47v1u460.screen {
+  display: none;
+}
+
+/* Desktop breakpoint - hide mobile, show desktop */
+@media (min-width: 768px) {
+  .index.screen {
+    display: none;
+  }
+  
+  .landing-pageu47desktopu47v1u460.screen {
+    display: block;
+  }
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -11,6 +36,10 @@
 :root {
   --radius: 16px;
   --animate-spin: spin 1s linear infinite;
+  /* Add Kobek color variables */
+  --primary: #2f478a;
+  --secondary: #e3b505;
+  --accent: #bedcee;
 }
 
 html { direction: rtl; }
