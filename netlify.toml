@@ -1,5 +1,5 @@
 [build]
-  command = "mkdir -p out && cp landing-pageu47desktopu47v1u460.html out/index.html && cp -r css out/ && cp -r fonts out/ && cp -r img out/ && cp -r public/* out/"
+  command = "rm -rf out && mkdir -p out && cp landing-pageu47desktopu47v1u460.html out/index.html && cp -r css out/ && cp -r fonts out/ && cp -r img out/ && cp -r public/* out/ 2>/dev/null || true"
   publish = "out"
 
 # Custom headers for better performance
