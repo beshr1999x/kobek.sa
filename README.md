@@ -15,3 +15,4 @@ npm run dev
 - Edit sections in `app/(sections)/*`.
 - Colors in `tailwind.config.js`.
 - Global RTL is set in `app/globals.css`.
+# HTML Landing Page Deployment Tue Sep  9 22:56:32 +03 2025
