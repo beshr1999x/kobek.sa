@@ -1,5 +1,5 @@
 [build]
-  command = "npm run build"
+  command = "npm run build && cp landing-pageu47desktopu47v1u460.html out/index.html && cp -r css out/ && cp -r fonts out/ && cp -r img out/"
   publish = "out"
 
 [[plugins]]
