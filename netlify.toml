@@ -1,9 +1,6 @@
 [build]
-  command = "npm run build && cp landing-pageu47desktopu47v1u460.html out/index.html && cp -r css out/ && cp -r fonts out/ && cp -r img out/"
+  command = "mkdir -p out && cp landing-pageu47desktopu47v1u460.html out/index.html && cp -r css out/ && cp -r fonts out/ && cp -r img out/ && cp -r public/* out/"
   publish = "out"
-
-[[plugins]]
-  package = "@netlify/plugin-nextjs"
 
 # Custom headers for better performance
 [[headers]]
